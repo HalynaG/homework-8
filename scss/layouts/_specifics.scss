@@ -1,0 +1,50 @@
+.specifics {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.specifics-list {
+    display: flex;
+
+}
+
+
+
+.specifics-list__iteam:not(:last-child) {
+    margin-right: 30px;
+}
+
+.specifics-list__iteam {
+    width: 270px;
+}
+
+.container-icon {
+    display: flex;
+    background-color: var(--primary-team-color);
+    border-radius: 4px;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+.specifics-list__icon {
+    height: 120px;
+}
+
+.specifics-list__title {
+
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    
+}
+
+.specifics-list__subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-subtitle-color);
+}
