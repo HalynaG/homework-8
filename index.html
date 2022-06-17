@@ -30,14 +30,55 @@
                <a class="logo" href="./index.html" aria-label="лаготип сайта" lang="en"
                   ><span>Web</span>Studio</a
                >
-               <button class="header-menu-btn" type="button">
-          <svg class="mobile-menu__icon" width="40" height="40">
-            <use
-              class="mobile-menu__icon--open"
-              href="./images/icons.svg#menu"
-            ></use>
-          </svg>
-        </button>
+               <button type="button" class="header-menu__btn" 
+            aria-expanded="false" aria-controls="menu-container" data-menu-button>
+                <svg widht="40px" height="40px" 
+                aria-label="Перключатель мобильного меню">
+                    <use class="header-menu__icon-cross" href="./images/symbol-defs-mob.svg#icon-close_40px"></use>
+                    <use class="header-menu__icon-menu" href="./images/symbol-defs-mob.svg#icon-menu_40px"></use>
+                </svg>
+            </button>
+             <div class="menu-container" id="menu-container" data-menu>
+            <ul class="modal-menu-list list">
+              <li class="modal-menu-list__item">
+                <a class="modal-menu-list__link link modal-menu__link--current" href="./index.html">Студия</a>
+              </li>
+              <li class="modal-menu-list__item">
+                <a class="modal-menu-list__link link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="modal-menu-list__item">
+                <a class="modal-menu-list__link link" href="#">Контакты</a>
+              </li>
+            </ul>
+
+            <ul class="modal-menu-contacts list">
+              <li class="modal-menu-contacts__item">
+                <a class="modal-menu-contacts__link-tel link" href="tel:+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="modal-menu-contacts__item">
+                <a class="modal-menu-contacts__link-mail link" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mobile-menu__socials list">
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link link"  lang="en">Instagram </a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link link"  lang="en">Twitter</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link link" lang="en">Facebook</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link link"  lang="en">LinkedIn</a>
+              </li>
+            </ul>
+                    </div>
                <ul class="header-list list">
                   <li class="header-list__item">
                      <a class="header-list__link link header-list__link--current" href="./index.html">Студия</a>
@@ -227,6 +268,7 @@
                   <li class="doing-list__item">
                      <div class="doing-list__img">
                         <img
+                           srcset="./images/main/doing/doing-img1.jpg 1x, ./images/main/doing/doing-img1@2x.jpg 2x"
                            src="./images/main/doing/doing-img1.jpg"
                            alt="написание программ"
                            class="doing-img"
@@ -239,6 +281,7 @@
                   <li class="doing-list__item">
                      <div class="doing-list__img">
                         <img
+                           srcset="./images/main/doing/doing-img2.jpg 1x, ./images/main/doing/doing-img2@2x.jpg 2x"
                            src="./images/main/doing/doing-img2.jpg"
                            alt="создание сайта"
                            class="doing-img"
@@ -251,6 +294,7 @@
                   <li class="doing-list__item">
                      <div class="doing-list__img">
                         <img
+                           srcset="./images/main/doing/doing-img3.jpg 1x, ./images/main/doing/doing-img3@2x.jpg 2x"
                            src="./images/main/doing/doing-img3.jpg"
                            alt="создание веб-дизайна"
                            class="doing-img"
