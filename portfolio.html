@@ -31,6 +31,78 @@
                <a class="logo" href="./index.html" aria-label="лаготип сайта" lang="en"
                   ><span>Web</span>Studio</a
                >
+               <button
+                  type="button"
+                  class="header-menu__btn"
+                  aria-expanded="false"
+                  aria-controls="menu-container"
+                  data-menu-button
+               >
+                  <svg
+                     class="header-menu__icon"
+                     widht="40px"
+                     height="40px"
+                     aria-label="Перключатель мобильного меню"
+                  >
+                     <use
+                        class="header-menu__icon-menu"
+                        href="./images/sprite.svg#icon-menu-burger-icon"
+                     ></use>
+                     <use
+                        class="header-menu__icon-cross"
+                        href="./images/sprite.svg#icon-close-menu-icon"
+                     ></use>
+                  </svg>
+               </button>
+               <div class="menu-container" id="menu-container" data-menu>
+                  <ul class="modal-menu-list list">
+                     <li class="modal-menu-list__item">
+                        <a
+                           class="modal-menu-list__link link modal-menu__link--current"
+                           href="./index.html"
+                           >Студия</a
+                        >
+                     </li>
+                     <li class="modal-menu-list__item">
+                        <a class="modal-menu-list__link link" href="./portfolio.html">Портфолио</a>
+                     </li>
+                     <li class="modal-menu-list__item">
+                        <a class="modal-menu-list__link link" href="#">Контакты</a>
+                     </li>
+                  </ul>
+
+                  <ul class="modal-menu-contacts list">
+                     <li class="modal-menu-contacts__item">
+                        <a class="modal-menu-contacts__link-tel link" href="tel:+380961111111">
+                           +38 096 111 11 11</a
+                        >
+                     </li>
+                     <li class="modal-menu-contacts__item">
+                        <a
+                           class="modal-menu-contacts__link-mail link"
+                           href="mailto:info@devstudio.com"
+                        >
+                           info@devstudio.com</a
+                        >
+                     </li>
+                  </ul>
+
+                  <ul class="mobile-menu__socials list">
+                     <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link" lang="en">Instagram </a>
+                     </li>
+                     <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link" lang="en">Twitter</a>
+                     </li>
+                     <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link" lang="en">Facebook</a>
+                     </li>
+                     <li class="mobile-menu__item">
+                        <a href="" class="mobile-menu__link link" lang="en">LinkedIn</a>
+                     </li>
+                  </ul>
+               </div>
+
                <ul class="header-list list">
                   <li class="header-list__item">
                      <a class="header-list__link link" href="./index.html">Студия</a>
@@ -94,13 +166,44 @@
                   <li class="gallery-item">
                      <a class="progects-item" href="#">
                         <div class="project-img">
-                           <img
-                              src="./images/portfolio/portfolio-img1.jpg"
-                              class="portfolio-img"
-                              alt="Технокряк"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <!-- для десктопних екранів -->
+                              <source
+                                 media="(min-width: 1200px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img1_lg.jpg    1x,
+                                    ./images/portfolio/portfolio-img1_lg@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!--  для планшетних -->
+                              <source
+                                 media="(min-width: 768px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img1_md.jpg    1x,
+                                    ./images/portfolio/portfolio-img1_md@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для мобільних -->
+                              <source
+                                 media="(max-width: 767px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img1_sm.jpg    1x,
+                                    ./images/portfolio/portfolio-img1_sm@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- зображення, що працює у будь-якому випадку -->
+                              <img
+                                 class="portfolio-img"
+                                 src="./images/portfolio/portfolio-img1_sm.jpg"
+                                 alt="Технокряк"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
+
                            <p class="project-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -114,13 +217,44 @@
                   <li class="gallery-item">
                      <a class="progects-item" href="#">
                         <div class="project-img">
-                           <img
-                              src="./images/portfolio/portfolio-img2.jpg"
-                              class="portfolio-img"
-                              alt="Постер New Orlean vs Golden Star"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <!-- для десктопних екранів -->
+                              <source
+                                 media="(min-width: 1200px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img2_lg.jpg    1x,
+                                    ./images/portfolio/portfolio-img2_lg@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для планшетних -->
+                              <source
+                                 media="(min-width: 768px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img2_md.jpg    1x,
+                                    ./images/portfolio/portfolio-img2_md@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для мобільних -->
+                              <source
+                                 media="(max-width: 767px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img2_sm.jpg    1x,
+                                    ./images/portfolio/portfolio-img2_sm@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- зображення, що працює у будь-якому випадку -->
+                              <img
+                                 class="portfolio-img"
+                                 src="./images/portfolio/portfolio-img2_sm.jpg"
+                                 alt="Постер New Orlean vs Golden Star"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
+
                            <p class="project-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -135,13 +269,44 @@
                   <li class="gallery-item">
                      <a class="progects-item" href="#">
                         <div class="project-img">
-                           <img
-                              src="./images/portfolio/portfolio-img3.jpg"
-                              class="portfolio-img"
-                              alt="Ресторан Seafood"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <!-- для десктопних екранів -->
+                              <source
+                                 media="(min-width: 1200px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img3_lg.jpg    1x,
+                                    ./images/portfolio/portfolio-img3_lg@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для планшетних -->
+                              <source
+                                 media="(min-width: 768px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img3_md.jpg    1x,
+                                    ./images/portfolio/portfolio-img3_md@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для мобільних -->
+                              <source
+                                 media="(max-width: 767px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img3_sm.jpg    1x,
+                                    ./images/portfolio/portfolio-img3_sm@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- зображення, що працює у будь-якому випадку -->
+                              <img
+                                 class="portfolio-img"
+                                 src="./images/portfolio/portfolio-img3_sm.jpg"
+                                 alt="Ресторан Seafood"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
+
                            <p class="project-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -156,13 +321,44 @@
                   <li class="gallery-item">
                      <a class="progects-item" href="#">
                         <div class="project-img">
-                           <img
-                              src="./images/portfolio/portfolio-img4.jpg"
-                              class="portfolio-img"
-                              alt="Проект Prime"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <!-- для десктопних -->
+                              <source
+                                 media="(min-width: 1200px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img4_lg.jpg    1x,
+                                    ./images/portfolio/portfolio-img4_lg@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для планшетних  -->
+                              <source
+                                 media="(min-width: 768px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img4_md.jpg    1x,
+                                    ./images/portfolio/portfolio-img4_md@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для мобільних  -->
+                              <source
+                                 media="(max-width: 767px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img4_sm.jpg    1x,
+                                    ./images/portfolio/portfolio-img4_sm@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- зображення, що працює у будь-якому випадку -->
+                              <img
+                                 class="portfolio-img"
+                                 src="./images/portfolio/portfolio-img4_sm.jpg"
+                                 alt="Проект Prime"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
+
                            <p class="project-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -177,13 +373,44 @@
                   <li class="gallery-item">
                      <a class="progects-item" href="#">
                         <div class="project-img">
-                           <img
-                              src="./images/portfolio/portfolio-img5.jpg"
-                              class="portfolio-img"
-                              alt="Проект Boxes"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <!--  для десктопних -->
+                              <source
+                                 media="(min-width: 1200px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img5_lg.jpg    1x,
+                                    ./images/portfolio/portfolio-img5_lg@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для планшетних -->
+                              <source
+                                 media="(min-width: 768px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img5_md.jpg    1x,
+                                    ./images/portfolio/portfolio-img5_md@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для мобільних -->
+                              <source
+                                 media="(max-width: 767px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img5_sm.jpg    1x,
+                                    ./images/portfolio/portfolio-img5_sm@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- зображення, що працює у будь-якому випадку -->
+                              <img
+                                 class="portfolio-img"
+                                 src="./images/portfolio/portfolio-img5_sm.jpg"
+                                 alt="Проект Boxes"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
+
                            <p class="project-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -198,13 +425,44 @@
                   <li class="gallery-item">
                      <a class="progects-item" href="#">
                         <div class="project-img">
-                           <img
-                              src="./images/portfolio/portfolio-img6.jpg"
-                              class="portfolio-img"
-                              alt="Inspiration has no Borders"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <!-- для десктопних екранів -->
+                              <source
+                                 media="(min-width: 1200px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img6_lg.jpg    1x,
+                                    ./images/portfolio/portfolio-img6_lg@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для планшетних -->
+                              <source
+                                 media="(min-width: 768px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img6_md.jpg    1x,
+                                    ./images/portfolio/portfolio-img6_md@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для мобільних -->
+                              <source
+                                 media="(max-width: 767px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img6_sm.jpg    1x,
+                                    ./images/portfolio/portfolio-img6_sm@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- зображення, що працює у будь-якому випадку -->
+                              <img
+                                 class="portfolio-img"
+                                 src="./images/portfolio/portfolio-img6_sm.jpg"
+                                 alt="Inspiration has no Borders"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
+
                            <p class="project-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -219,13 +477,44 @@
                   <li class="gallery-item">
                      <a class="progects-item" href="#">
                         <div class="project-img">
-                           <img
-                              src="./images/portfolio/portfolio-img7.jpg"
-                              class="portfolio-img"
-                              alt="Издание Limited Edition"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <!-- для десктопних екранів -->
+                              <source
+                                 media="(min-width: 1200px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img7_lg.jpg    1x,
+                                    ./images/portfolio/portfolio-img7_lg@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для планшетних -->
+                              <source
+                                 media="(min-width: 768px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img7_md.jpg    1x,
+                                    ./images/portfolio/portfolio-img7_md@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для мобільних -->
+                              <source
+                                 media="(max-width: 767px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img7_sm.jpg    1x,
+                                    ./images/portfolio/portfolio-img7_sm@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- зображення, що працює у будь-якому випадку -->
+                              <img
+                                 class="portfolio-img"
+                                 src="./images/portfolio/portfolio-img7_sm.jpg"
+                                 alt="Издание Limited Edition"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
+
                            <p class="project-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -240,13 +529,44 @@
                   <li class="gallery-item">
                      <a class="progects-item" href="#">
                         <div class="project-img">
-                           <img
-                              src="./images/portfolio/portfolio-img8.jpg"
-                              class="portfolio-img"
-                              alt="Проект LAB"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <!-- для десктопних екранів -->
+                              <source
+                                 media="(min-width: 1200px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img8_lg.jpg    1x,
+                                    ./images/portfolio/portfolio-img8_lg@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для планшетних -->
+                              <source
+                                 media="(min-width: 768px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img8_md.jpg    1x,
+                                    ./images/portfolio/portfolio-img8_md@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для мобільних -->
+                              <source
+                                 media="(max-width: 767px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img8_sm.jpg    1x,
+                                    ./images/portfolio/portfolio-img8_sm@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- зображення, що працює у будь-якому випадку -->
+                              <img
+                                 class="portfolio-img"
+                                 src="./images/portfolio/portfolio-img8_sm.jpg"
+                                 alt="Проект LAB"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
+
                            <p class="project-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -261,13 +581,44 @@
                   <li class="gallery-item">
                      <a class="progects-item" href="#">
                         <div class="project-img">
-                           <img
-                              src="./images/portfolio/portfolio-img9.jpg"
-                              class="portfolio-img"
-                              alt="Growing Business"
-                              width="370"
-                              height="294"
-                           />
+                           <picture>
+                              <!-- для десктопних екранів -->
+                              <source
+                                 media="(min-width: 1200px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img9_lg.jpg    1x,
+                                    ./images/portfolio/portfolio-img9_lg@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для планшетних -->
+                              <source
+                                 media="(min-width: 768px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img9_md.jpg    1x,
+                                    ./images/portfolio/portfolio-img9_md@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- для мобільних -->
+                              <source
+                                 media="(max-width: 767px)"
+                                 srcset="
+                                    ./images/portfolio/portfolio-img9_sm.jpg    1x,
+                                    ./images/portfolio/portfolio-img9_sm@2x.jpg 2x
+                                 "
+                                 type="image/jpg"
+                              />
+                              <!-- зображення, що працює у будь-якому випадку -->
+                              <img
+                                 class="portfolio-img"
+                                 src="./images/portfolio/portfolio-img9_sm.jpg"
+                                 alt="Growing Business"
+                                 width="450"
+                                 height="294"
+                              />
+                           </picture>
+
                            <p class="project-text">
                               Ресурс предлагает комплексные предложения с разным уровнем функционала
                               и сервисов. Все это позволит посетителю получить исчерпывающие
@@ -375,5 +726,6 @@
             </div>
          </div>
       </footer>
+      <script src="./js/mobile-menu.js"></script>
    </body>
 </html>
