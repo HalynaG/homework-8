@@ -8,6 +8,18 @@ body {
 }
 
 .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+// планшет
+@include mq(tablet) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+// декстоп
+@include mq(desktop) {
     padding-top: 94px;
     padding-bottom: 94px;
+}
 }

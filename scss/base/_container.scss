@@ -6,4 +6,20 @@
     margin-left: auto;
     margin-right: auto;
    
-}
+
+ // мобільний екран 480px
+ @include mq(mobile) {
+     width: 480px;
+ }
+
+ // планшет
+ @include mq(tablet) {
+     width: 768px;
+ }
+
+ // декстоп
+ @include mq(desktop) {
+     width: 1200px;
+ }
+
+ }

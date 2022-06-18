@@ -9,6 +9,30 @@
 
 .our-clients-list {
     display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.our-clients-list__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 100%;
+    margin: 15px;
+
+    @media screen and (min-width: 480px) and (max-width: 768px) {
+        flex-basis: calc((100% - 60px) / 2);
+    }
+
+    // планшет
+    @include mq(tablet) {
+        flex-basis: calc((100% - 90px) / 3);
+    }
+
+    // декстоп
+    @include mq(desktop) {
+        flex-basis: calc((100% - 180px) / 6);
+    }
 }
 
 .our-clients-list__link {
@@ -16,13 +40,23 @@
     justify-content: center;
     align-items: center;
     
-    width: 170px;
+    width: 210px;
     height: 92px;
     border: 1px solid var(--passive-icon-color);
     border-radius: 4px;
     cursor: pointer;
     
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+// планшет
+    @include mq(tablet) {
+        width: 226px;
+    }
+
+    // декстоп
+    @include mq(desktop) {
+        width: 170px;
+    }
 
 &:hover,
     &:focus {
@@ -36,8 +70,7 @@
 
 .our-clients__icon {
     fill: var(--passive-icon-color);
-    
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
