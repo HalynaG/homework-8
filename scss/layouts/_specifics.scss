@@ -1,7 +1,6 @@
 .specifics {
     @media screen and (min-width: 1200px) {
-            padding-top: 94px;
-                padding-bottom: 94px;
+                          padding-bottom: 0px;
         }   
 }
 
@@ -18,10 +17,16 @@
         }
     }
 
+.specifics-list__iteam {
+    margin-bottom: 30px;
 
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
+        width: 354px;
+            }
+}
 
 .specifics-list__iteam {
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
+    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
             &:nth-child(odd) {
                 margin-right: 30px;
             }
@@ -32,13 +37,6 @@
         }
 }
 
-.specifics-list__iteam {
-    margin-bottom: 30px;
-    @media screen and (min-width: 768px) and (max-width: 1200px) {
-            width: 354px;
-            
-        }
-    }
         .specifics-list__iteam {
         
                 // декстоп
@@ -55,6 +53,7 @@
             }
  
 .container-icon {
+    height: 120px;
     display: flex;
     background-color: var(--primary-team-color);
     border-radius: 4px;
@@ -62,9 +61,6 @@
     justify-content: center;
 }
 
-.specifics-list__icon {
-    height: 120px;
-}
 
 .specifics-list__title {
 display: flex;
@@ -88,9 +84,7 @@ display: flex;
 }
 
 .specifics-list__subtitle {
-    margin-top: 0;
-    margin-bottom: 0;
-
+    
     font-size: 14px;
     line-height: 1.71;
     color: var(--primary-subtitle-color);

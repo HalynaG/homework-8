@@ -1,12 +1,12 @@
 .doing {
-    @media screen and (max-width: 1200px) {
-    padding-top: 0px;
-    padding-bottom: 94px;
-}
+    @media screen and (max-width: 1199.98px) {
+    display: none;
+        padding: 0px;
+    }
 }
 
 .section-title {
-    margin-top: 0;
+    
     margin-bottom: 50px;
 
     font-weight: 700;
@@ -22,13 +22,15 @@
 
 }
 
-.doing-list__item:not(:last-child) {
-    margin-right: 30px;
+.doing-list__item {
+    position: relative;
+        margin-right: 30px;
+    
+        &:last-child {
+            margin-right: 0;
+        }
 }
 
-.doing-list__img {
-    position: relative;
-}
 
 .doing-list__text {
     display: flex;

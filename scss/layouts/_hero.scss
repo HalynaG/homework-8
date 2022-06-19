@@ -68,7 +68,7 @@
 
     color: var(--white-color);
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1199.98px) {
             max-width: 696px;
             font-size: 44px;
             line-height: 1.36;
@@ -78,8 +78,7 @@
 .hero-button {
         border-radius: 4px;
         padding: 10px 32px;
-    min-width: 200px;
-    border: 0;
+       border: 0;
     cursor: pointer;
 
     background-color: var(--accent-color);
