@@ -1,13 +1,13 @@
-html {
+/*html {
     box-sizing: border-box;
 }
 
-*,
+/* *,
 *::before,
 *::after {
     box-sizing: inherit;
 }
-
+*/
 a {
     text-decoration: none;
                color: inherit;
@@ -34,7 +34,11 @@ h4,
 h5,
 h6,
 p {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 
+.link {
+    text-decoration: none;
+    color: currentColor;
+}
