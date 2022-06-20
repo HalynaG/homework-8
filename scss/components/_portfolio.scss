@@ -76,10 +76,10 @@
   transition-property: box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover .port-exmpl-img-info {
+  &:hover .port-exmpl-list__img-info {
     transform: translateY(0);
   }
-  &:focus .port-exmpl-img-info {
+  &:focus .port-exmpl-list__img-info {
     transform: translateY(0);
   }
   &:hover,
@@ -89,7 +89,7 @@
   }
 }
 
-.port-exmpl-img {
+.port-exmpl-list__img {
   position: relative;
   overflow: hidden;
   &-info {
