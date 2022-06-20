@@ -100,7 +100,7 @@
   }
   &-link:hover,
   &-link:focus {
-    background-color: var(--first-accent-color);
+    background-color: var(--accent-color);
   }
   &-icon {
     fill: #ffffff;
@@ -176,7 +176,7 @@
     cursor: pointer;
     height: 50px;
     min-width: 200px;
-    background: var(--first-accent-color);
+    background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 0;
