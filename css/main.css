@@ -975,7 +975,7 @@ body {
   }
 }
 
-.hero__item {
+.hero-title {
   font-weight: 900;
   font-size: 26px;
   line-height: 1.62;
@@ -987,7 +987,7 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  .hero__item {
+  .hero-title {
     font-size: 44px;
     line-height: 1.36;
   }
