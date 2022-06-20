@@ -22,21 +22,18 @@
       <!-- Custom styles -->
       <link rel="stylesheet" href="./css/main.min.css" />
    </head>
-   <body class="" data-menu-body>
+   <body>
       <!-- Шапка сайту -->
       <header class="header">
          <div class="container header-container">
             <nav class="navigation">
-               <a class="logo header-logo" href="./index.html" aria-label="лаготип сайта" lang="en"
+               <a class="logo header__logo" href="./index.html" aria-label="лаготип сайта" lang="en"
                   ><span>Web</span>Studio</a
                >
                <button
                   type="button"
-                  class="header-menu__btn"
-                  aria-expanded="false"
-                  aria-controls="menu-container"
-                  data-menu-button
-               >
+                  class="menu-open-btn"
+                                 >
                   <svg
                      class="header-menu__icon"
                      widht="40"
@@ -47,14 +44,57 @@
                         class="header-menu__icon-menu"
                         href="./images/sprite.svg#icon-menu-burger-icon"
                      ></use>
-                     <use
-                        class="header-menu__icon-cross"
-                        href="./images/sprite.svg#icon-close-menu-icon"
-                     ></use>
-                  </svg>
+                                       </svg>
                </button>
-               <div class="menu-container" id="menu-container" data-menu>
-                  <ul class="modal-menu-list list">
+               <div class="menu-container" id="menu-container">
+                  <nav class="header-nav">
+<ul class="header-list list">
+                  <li class="header-list__item link">
+                     <a
+                        class="header-list__link link header-list__link--current"
+                        href="./index.html"
+                        >Студия</a
+                     >
+                  </li>
+                  <li class="header-list__item link">
+                     <a class="header-list__link link" href="./portfolio.html">Портфолио</a>
+                  </li>
+                  <li class="header-list__item link">
+                     <a class="header-list__link link" href="#">Контакты</a>
+                  </li>
+               </ul>
+            </nav>
+            <ul class="contacts list">
+               <li class="contacts__item contacts-position">
+                  <a class="contacts__link-mail link" href="mailto:info@devstudio.com">
+                     <svg class="contacts__icon envelope" width="16" height="12">
+                        <use href="./images/sprite.svg#icon-envelope"></use>
+                     </svg>
+                     info@devstudio.com</a
+                  >
+               </li>
+               <li class="contacts__item contacts-position">
+                  <a class="contacts__link-tel link" href="tel:+380961111111">
+                     <svg class="contacts__icon" width="10" height="16">
+                        <use href="./images/sprite.svg#icon-smartphone"></use>
+                     </svg>
+                     +38 096 111 11 11</a
+                  >
+               </li>
+            </ul>
+         </div>
+      </div>
+
+<div class="mob-menu is-hidden">
+        <button class="menu-close-btn" type="button">
+          <svg class="header-menu__icon" width="40" height="40">
+            <use
+              class="header-menu__icon-menu--close"
+              href="./images/sprite.svg#icon-close-menu-icon"
+            ></use>
+          </svg>
+        </button>
+        <ul class="modal-menu-list list">
                      <li class="modal-menu-list__item">
                         <a
                            class="modal-menu-list__link link modal-menu__link--current"
@@ -69,9 +109,8 @@
                         <a class="modal-menu-list__link link" href="#">Контакты</a>
                      </li>
                   </ul>
-
-                  <ul class="modal-menu-contacts list">
-                     <li class="modal-menu-contacts__item">
+        <ul class="modal-menu-contacts list">
+                     <li class="modal-menu-contacts__item contacts-position">
                         <a class="modal-menu-contacts__link-tel link" href="tel:+380961111111">
                            +38 096 111 11 11</a
                         >
@@ -85,57 +124,21 @@
                         >
                      </li>
                   </ul>
-
-                  <ul class="mobile-menu__socials list">
-                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link link" lang="en">Instagram </a>
+        <ul class="mobile-menu-socials list">
+                     <li class="mobile-menu-socials__item">
+                        <a href="" class="mobile-menu-socials__link link" lang="en">Instagram </a>
                      </li>
-                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link link" lang="en">Twitter</a>
+                     <li class="mobile-menu-socials__item">
+                        <a href="" class="mobile-menu-socials__link link" lang="en">Twitter</a>
                      </li>
-                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link link" lang="en">Facebook</a>
+                     <li class="mobile-menu-socials__item">
+                        <a href="" class="mobile-menu-socials__link link" lang="en">Facebook</a>
                      </li>
-                     <li class="mobile-menu__item">
-                        <a href="" class="mobile-menu__link link" lang="en">LinkedIn</a>
+                     <li class="mobile-menu-socials__item">
+                        <a href="" class="mobile-menu-socials__link link" lang="en">LinkedIn</a>
                      </li>
                   </ul>
-               </div>
-               <ul class="header-list list">
-                  <li class="header-list__item">
-                     <a
-                        class="header-list__link link header-list__link--current"
-                        href="./index.html"
-                        >Студия</a
-                     >
-                  </li>
-                  <li class="header-list__item">
-                     <a class="header-list__link link" href="./portfolio.html">Портфолио</a>
-                  </li>
-                  <li class="header-list__item">
-                     <a class="header-list__link link" href="#">Контакты</a>
-                  </li>
-               </ul>
-            </nav>
-            <ul class="contact list">
-               <li class="contacts__item">
-                  <a class="contacts__link link" href="mailto:info@devstudio.com">
-                     <svg class="contacts__icon envelope" width="16" height="12">
-                        <use href="./images/sprite.svg#icon-envelope"></use>
-                     </svg>
-                     info@devstudio.com</a
-                  >
-               </li>
-               <li class="contacts__item">
-                  <a class="contacts__link link" href="tel:+380961111111">
-                     <svg class="contacts__icon" width="10" height="16">
-                        <use href="./images/sprite.svg#icon-smartphone"></use>
-                     </svg>
-                     +38 096 111 11 11</a
-                  >
-               </li>
-            </ul>
-         </div>
+      </div>     
       </header>
       <main>
          <!--секція заголовок-->
@@ -297,51 +300,45 @@
                <h2 class="section-title">Чем мы занимаемся</h2>
                <ul class="doing-list list">
                   <li class="doing-list__item">
-                     <div class="doing-list__img">
-                        <img
-                           srcset="
-                              ./images/main/doing/doing-img1.jpg    1x,
+                     <picture>
+                <source
+                  srcset="./images/main/doing/doing-img1.jpg    1x,
                               ./images/main/doing/doing-img1@2x.jpg 2x
                            "
-                           src="./images/main/doing/doing-img1.jpg"
-                           alt="написание программ"
-                           class="doing-img"
-                           width="370"
-                           height="294"
-                        />
-                        <p class="doing-list__text">Десктопные приложения</p>
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/main/doing/doing-img1.jpg" alt="Десктопные приложения" />
+              </picture>
+                     <div class="doing-list__img">
+                                             <p class="doing-list__text">Десктопные приложения</p>
                      </div>
                   </li>
                   <li class="doing-list__item">
-                     <div class="doing-list__img">
-                        <img
-                           srcset="
-                              ./images/main/doing/doing-img2.jpg    1x,
+                     <picture>
+                <source
+                  srcset="./images/main/doing/doing-img2.jpg    1x,
                               ./images/main/doing/doing-img2@2x.jpg 2x
                            "
-                           src="./images/main/doing/doing-img2.jpg"
-                           alt="создание сайта"
-                           class="doing-img"
-                           width="370"
-                           height="294"
-                        />
-                        <p class="doing-list__text">Мобильные приложения</p>
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/main/doing/doing-img2.jpg" alt="Мобильные приложения" />
+              </picture>
+                     <div class="doing-list__img">
+                                                <p class="doing-list__text">Мобильные приложения</p>
                      </div>
                   </li>
                   <li class="doing-list__item">
-                     <div class="doing-list__img">
-                        <img
-                           srcset="
-                              ./images/main/doing/doing-img3.jpg    1x,
+                     <picture>
+                <source
+                  srcset="./images/main/doing/doing-img3.jpg    1x,
                               ./images/main/doing/doing-img3@2x.jpg 2x
                            "
-                           src="./images/main/doing/doing-img3.jpg"
-                           alt="создание веб-дизайна"
-                           class="doing-img"
-                           width="370"
-                           height="294"
-                        />
-                        <p class="doing-list__text">Дизайнерские решения</p>
+                  media="(min-width: 1200px)"
+                />
+                <img src="./images/main/doing/doing-img3.jpg" alt="создание веб-дизайна" />
+              </picture>
+                     <div class="doing-list__img">
+                                                <p class="doing-list__text">Дизайнерские решения</p>
                      </div>
                   </li>
                </ul>

@@ -1,91 +1,63 @@
-.specifics {
-    @media screen and (min-width: 1200px) {
-                          padding-bottom: 0px;
-        }   
-}
-
 .specifics-list {
-    // планшет
+    margin-bottom: -30px;
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -30px;
+    }
+
+    &__iteam {
+        margin: 0 auto;
+        margin-bottom: 30px;
+
         @media screen and (min-width: 768px) {
-            display: flex;
-            flex-wrap: wrap;
+            width: calc(100% / 2 - 30px);
+            margin-left: 30px;
         }
-    
-        // декстоп
-        @include mq(desktop) {
-            display: flex;
+
+        @media screen and (min-width: 1200px) {
+            width: calc(100% / 4 - 30px);
         }
     }
 
-.specifics-list__iteam {
-    margin-bottom: 30px;
+    &__title {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: var(--second-title-color);
+        margin-bottom: 10px;
 
-    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-        width: 354px;
-            }
-}
-
-.specifics-list__iteam {
-    @media screen and (min-width: 768px) and (max-width: 1199.98px) {
-            &:nth-child(odd) {
-                margin-right: 30px;
-            }
-    
-            &:nth-last-child(-n + 2) {
-                margin-bottom: 0;
-            }
+        @media screen and (max-width: 767px) {
+            text-align: center;
         }
-}
+    }
 
-        .specifics-list__iteam {
-        
-                // декстоп
-                @include mq(desktop) {
-                    display: inline;
-                    width: 270px;
-                    margin-right: 30px;
-                    margin-bottom: 0;
-        
-                    &:last-child {
-                        margin-right: 0;
-                    }
-                }
-            }
- 
-.container-icon {
-    height: 120px;
-    display: flex;
-    background-color: var(--primary-team-color);
-    border-radius: 4px;
-    margin-bottom: 30px;
-    justify-content: center;
+    &__subtitle {
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--font-text-color);
+    }
+
+    .container-icon {
+        display: flex;
+        margin-bottom: 30px;
+        background-color: var(--primary-team-color);
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+       
+    }
 }
 
 
-.specifics-list__title {
-display: flex;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    justify-content: center;
 
-    // планшет
-        @include mq(tablet) {
-            display: block;
-            margin-bottom: 10px;
-        }
-    
-        // декстоп
-        @include mq(desktop) {
-            display: block;
-        }
-}
 
-.specifics-list__subtitle {
-    
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--primary-subtitle-color);
-}
+
+
+
+

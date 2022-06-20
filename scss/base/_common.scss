@@ -8,18 +8,23 @@ body {
 }
 
 .section {
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-// планшет
-@include mq(tablet) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 0px;
+    
+        @media screen and (min-width: 768px) {
+            padding: 60px 0px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            padding: 94px 0px;
+        }
 }
 
-// декстоп
-@include mq(desktop) {
-    padding-top: 94px;
-    padding-bottom: 94px;
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
 }
+
+.no-scroll {
+    overflow: hidden;
 }
