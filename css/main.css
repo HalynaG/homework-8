@@ -1681,6 +1681,12 @@ body {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 1200px) {
+  .port-nav-list__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
 .port-nav-list__btn {
   display: inline-block;
   font-weight: 500;
@@ -1745,7 +1751,6 @@ body {
         flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     width: 370px;
-    margin-bottom: 15px;
   }
 }
 
