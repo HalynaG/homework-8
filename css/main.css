@@ -1679,19 +1679,19 @@ body {
 
 .port-nav-list__item:not(:last-child) {
   margin-right: 8px;
-  margin-bottom: 15px;
 }
 
 .port-nav-list__btn {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
+  padding: 6px 22px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-  height: 38px;
-  min-width: 73px;
-  border: 0;
+  min-width: 120px;
+  border: none;
   border-radius: 4px;
   color: var(--second-title-color);
   background-color: #f5f4fa;
@@ -1723,9 +1723,6 @@ body {
 @media screen and (min-width: 768px) {
   .port-exmpl-list {
     margin-left: -30px;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
   }
 }
 

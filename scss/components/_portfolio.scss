@@ -14,12 +14,13 @@
 
 .port-nav-list__item:not(:last-child) {
   margin-right: 8px;
-  margin-bottom: 15px;
+  
   @include desktop {
   }
 }
 
 .port-nav-list__btn {
+  display: inline-block;
   font-weight: 500;
   font-size: 16px;
   padding: 6px 22px;
@@ -51,7 +52,7 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
   margin-bottom: -30px;
   @include tablet {
     margin-left: -30px;
-    justify-content: start;
+    
   }
 }
 
