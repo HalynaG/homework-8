@@ -27,7 +27,8 @@
   text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-    border: 0;
+  min-width: 120px;
+    border: none;
   border-radius: 4px;
   color: var(--second-title-color);
   background-color: #f5f4fa;
