@@ -15,7 +15,7 @@
 .port-nav-list__item:not(:last-child) {
   margin-right: 8px;
   
-  @include desktop {
+  @include mobile {
     margin-bottom: 15px;
   }
 }
